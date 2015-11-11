@@ -1,7 +1,7 @@
 
 function! pastenreplace#PasteAndReplace()
     normal! ggVG"_d"+p
-    exec '%'. s:replace_cmd
+    exec s:replace_cmd
     normal! ggVGy
 endf
 
